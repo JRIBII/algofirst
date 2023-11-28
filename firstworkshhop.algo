@@ -1,4 +1,4 @@
-ALGORITHM ALGORITHM algorithm_name
+ALGORITHM  algorithm_name
 VAR
     LENGTH: INTEGER :=0
     WORD_COUNT: INTEGER :=0
