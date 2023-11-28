@@ -1,0 +1,23 @@
+ALGORITHM ALGORITHM algorithm_name
+VAR
+    LENGTH: INTEGER :=0
+    WORD_COUNT: INTEGER :=0
+    VOWELS:INTEGER :=0
+    i:INTEGER
+    sentence:STRING
+BEGIN
+    do {
+        read(sentence)
+        LENGTH:=length(sentence)
+    }while(sentence[LENGTH]!=".")
+    for i:=1 to LENGTH do
+        if(sentence[i]==" ") then
+            WORD_COUNT:=WORD_COUNT+1
+        else if(sentence[i]=="a" or sentence[i]=="e" or sentence[i]=="i" or sentence[i]=="o" or sentence[i]=="u") then
+            VOWELS:=VOWELS+1
+        end if
+    end for
+    print("la phrase est de  ",LENGTH," mots")
+    print("le nombre de mot est " ,WORD_COUNT)
+    print("le nombre de voyelle est " ,VOWELS)
+END
